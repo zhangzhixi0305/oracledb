@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhixi.mapper.DetoxCaptureTakeDrugsMapper">
+
+    <resultMap id="BaseResultMap" type="com.zhixi.pojo.DetoxCaptureTakeDrugs">
+            <id property="caseId" column="CASE_ID" jdbcType="VARCHAR"/>
+            <result property="caseName" column="CASE_NAME" jdbcType="VARCHAR"/>
+            <result property="person" column="PERSON" jdbcType="VARCHAR"/>
+            <result property="sex" column="SEX" jdbcType="CHAR"/>
+            <result property="birthTime" column="BIRTH_TIME" jdbcType="TIMESTAMP"/>
+            <result property="idCard" column="ID_CARD" jdbcType="VARCHAR"/>
+            <result property="resolveResult" column="RESOLVE_RESULT" jdbcType="CHAR"/>
+            <result property="resolveTime" column="RESOLVE_TIME" jdbcType="TIMESTAMP"/>
+            <result property="sponsorMain" column="SPONSOR_MAIN" jdbcType="VARCHAR"/>
+            <result property="forcedQuarantine" column="FORCED_QUARANTINE" jdbcType="CHAR"/>
+            <result property="dataId" column="DATA_ID" jdbcType="VARCHAR"/>
+            <result property="createdTime" column="CREATED_TIME" jdbcType="TIMESTAMP"/>
+    </resultMap>
+</mapper>
